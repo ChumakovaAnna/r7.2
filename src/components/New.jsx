@@ -1,11 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-New.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-function New(props) {
+export default function New(props) {
   return (
     <div className="wrap-item wrap-item-new">
       <span className="label">New!</span>
@@ -13,5 +8,3 @@ function New(props) {
     </div>
   );
 }
-
-export default New;

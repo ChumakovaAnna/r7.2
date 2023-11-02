@@ -1,11 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-Popular.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-function Popular(props) {
+export default function Popular(props) {
   return (
     <div className="wrap-item wrap-item-popular">
       <span className="label">Popular!</span>
@@ -13,5 +8,3 @@ function Popular(props) {
     </div>
   );
 }
-
-export default Popular;

@@ -1,13 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import New from "./New";
 import Popular from "./Popular"
 
-filter.propTypes = {
-  Component: PropTypes.func.isRequired,
-};
-
-function filter(Component) {
+export default function filter(Component) {
   return (props) => {
     if (props.views<100)
     {
@@ -18,7 +13,5 @@ function filter(Component) {
         return (<Popular><Component  {...props} /></Popular>);
     }
     return <Component {...props} />
+  }
 }
-}
-
-export default filter;

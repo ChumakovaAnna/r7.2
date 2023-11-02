@@ -1,14 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-Video.propTypes = {
-  index: PropTypes.number,
-  type: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  views: PropTypes.number.isRequired,
-};
-
-function Video(props) {
+export default function Video(props) {
   return (
     <div className="item item-video">
       <iframe
@@ -22,5 +14,3 @@ function Video(props) {
     </div>
   );
 }
-
-export default Video;
